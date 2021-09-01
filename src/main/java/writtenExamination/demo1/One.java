@@ -2,7 +2,7 @@ package writtenExamination.demo1;
 
 import java.util.Scanner;
 
-public class First {
+public class One {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

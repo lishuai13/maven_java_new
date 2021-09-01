@@ -1,8 +1,10 @@
 package reflex.demo1;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 /**
  * 通过反射获取类的信息
@@ -41,6 +43,10 @@ public class GetInfo {
         //获取类的指定构造方法
         Constructor<?> declaredConstructor = aClass.getDeclaredConstructor(String.class,int.class,int.class);
         System.out.println(declaredConstructor);
+
+        //获取注解
+        Annotation[] annotations = aClass.getAnnotations();
+        System.out.println(Arrays.toString(annotations));
 
     }
 }

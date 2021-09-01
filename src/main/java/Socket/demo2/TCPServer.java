@@ -1,4 +1,4 @@
-package Socket.demo2;
+package socket.demo2;
 
 import java.io.File;
 import java.io.FileOutputStream;
